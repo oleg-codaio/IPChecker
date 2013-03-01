@@ -1,0 +1,11 @@
+*~
+*.exe
+*.dll
+*.o
+build/*
+debug/*
+release/*
+
+object_script.IPChecker.Debug
+object_script.IPChecker.Release
+Makefile*

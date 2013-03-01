@@ -1,0 +1,44 @@
+ #ifndef Q_CC_BOR
+ # if defined(UNDER_CE) && UNDER_CE >= 400
+ #  include <winbase.h>
+ # else
+ #  include <winver.h>
+ # endif
+ #endif
+
+ VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1, 2, 0, 0
+ PRODUCTVERSION 1, 2, 0, 0
+ FILEFLAGSMASK 0x3fL
+ #ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+ #else
+ FILEFLAGS 0x0L
+ #endif
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "Comments", "Simple Qt-based tray daemon that retrieves a machine's public IP address and uploads a file containing the IP to a given FTP server.\0"
+            VALUE "CompanyName", "Oleg Vaskevich\0"
+            VALUE "FileDescription", "IP Checker\0"
+            VALUE "FileVersion", "1.2\0"
+            VALUE "InternalName", "IPChecker.exe\0"
+            VALUE "LegalCopyright", "© 2010 Oleg Vaskevich"
+            VALUE "OriginalFilename", "IPChecker.exe\0"
+            VALUE "ProductName", "IP Checker"
+            VALUE "ProductVersion", "1.2\0"
+
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+IDI_ICON               ICON    DISCARDABLE     "main.ico"

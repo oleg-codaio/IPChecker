@@ -1,4 +1,4 @@
-IPChecker
+IP Checker
 =========
 
 Simple Qt-based tray daemon that retrieves a machine's public IP address and uploads a file containing the IP to a given FTP server.
